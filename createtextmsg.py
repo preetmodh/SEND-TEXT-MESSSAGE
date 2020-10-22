@@ -7,13 +7,13 @@ Created on Wed May 13 18:31:07 2020
 
 
 from twilio.rest import Client
-account_sid = "AC74b523a2be1ca45cedb6ad493ac2631d"
-auth_token = '9b2bb7f181c726941213f75b7fba0626'
+account_sid = "YOUR ACCOUNT SID FROM THE WEBSITE"
+auth_token = 'YOUR ACCOUNT TOKEN FROM THE WEBSITE'
 client = Client(account_sid, auth_token)
 
 message = client.messages.create(
-                              from_='+12058595019',
+                              from_='THE NUMBER GIVEN FROM TWILIO',
                               body='hello! how r you?',
-                              to='+919428132069'
+                              to='THE NUMBER YOU WANT TO SEND MESSAGE'
                           )
 print(message.body)

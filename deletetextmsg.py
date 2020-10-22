@@ -5,6 +5,8 @@ Created on Wed May 13 18:31:07 2020
 @author: PREET MODH
 """
 
+# Program to delete all message from the servers.
+
 
 from twilio.rest import Client
 

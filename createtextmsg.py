@@ -5,6 +5,7 @@ Created on Wed May 13 18:31:07 2020
 @author: PREET MODH
 """
 
+# Program to send message to given number
 
 from twilio.rest import Client
 account_sid = "YOUR ACCOUNT SID FROM THE WEBSITE"
@@ -13,7 +14,7 @@ client = Client(account_sid, auth_token)
 
 message = client.messages.create(
                               from_='THE NUMBER GIVEN FROM TWILIO',
-                              body='hello! how r you?',
+                              body='hello! how r you?',# the message you want to send
                               to='THE NUMBER YOU WANT TO SEND MESSAGE'
                           )
 print(message.body)
